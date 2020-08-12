@@ -1,0 +1,18 @@
+{
+  "name": "bara",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "bara",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.11.0",
+    "cypress-localstorage-commands": "^1.2.1",
+    "prettier": "2.0.5"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "description": ""
+}
