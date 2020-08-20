@@ -8,8 +8,8 @@ describe(
 			cy.visit('/#/login')
 			cy.get('h1.text-xs-center.ng-binding').as('greeting')
 			cy.get('p.text-xs-center > [ui-sref="app.register"]').as('signUpLink')
-			cy.get(':nth-child(2) > .form-control').as('emailField')
-			cy.get(':nth-child(3) > .form-control').as('passwordField')
+			cy.get('input[placeholder=Email]').as('emailField')
+			cy.get('input[placeholder=Password]').as('passwordField')
 			cy.get('.btn').as('loginButton')
 		})
 

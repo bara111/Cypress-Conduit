@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "ci": "cypress run --record --key f4c82b21-d1b1-4722-9057-6cd8e7c0afce"
+
   },
   "author": "bara",
   "license": "ISC",

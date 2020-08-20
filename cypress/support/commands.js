@@ -12,8 +12,8 @@
 // -- This is a parent command --
 Cypress.Commands.add('login', (email, password) => {
 	cy.visit('/login')
-	cy.get(':nth-child(2) > .form-control').type(email)
-	cy.get(':nth-child(3) > .form-control').type(password)
+	cy.get('input[placeholder=Email]').type(email)
+	cy.get('input[placeholder=Password]').type(password)
 	cy.get('.btn')
 		.click({ force: true })
 		.should(() => {
@@ -78,6 +78,9 @@ Cypress.Commands.add(
       .children()
       .should('have.length', 4)
       .and('not.be.hidden')
+  })
+  Cypress.Commands.add("LoginWithToken",()=>{
+	  window.localStorage.setItem('jwtToken',"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTA4MDk5LCJ1c2VybmFtZSI6ImJhcmExMTExIiwiZXhwIjoxNjAyODMwMDcwfQ.7CTpdpPpYpjrcWF0vERS26K22CyAbBeO-i0BImOzFho")
   })
   
 
